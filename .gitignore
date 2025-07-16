@@ -11,6 +11,9 @@
 *.lib
 *.ilk
 
+#
+.idea/
+
 # User-specific files
 *.rsuser
 *.suo
