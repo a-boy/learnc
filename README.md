@@ -13,10 +13,10 @@
 这个仓库中包含了多个有趣的小项目和代码片段：
 
 - **🔢 斐波那契数列**: 多种方式实现斐波那契数列的计算与可视化 (`Fibonacci.c`, `fib_colors.c`, `fib_diagram.c`)。
-- **🍩 旋转甜甜圈**: 经典的控制台3D旋转甜甜圈动画 (`donut.c`), 摘自 [a1k0n.net](https://www.a1k0n.net/2021/01/13/optimizing-donut.html) 。tcc
+- **🍩 旋转甜甜圈**: 经典的控制台3D旋转甜甜圈动画 (`donut.c`), 摘自 [a1k0n.net](https://www.a1k0n.net/2021/01/13/optimizing-donut.html) 。
 - **🧩 数独游戏**: 一个C语言实现的数独解算器 (`sudoku.c`)。
 - **🥧 圆周率计算**: 使用不同算法计算π，包括 Chudnovsky 算法 (`pi.c`, `chudnovsky_pi.c`)。
-- ** maze**: 一个简单的迷宫生成器 (`maze.c`)。
+- **ꡙ‍ maze**: 一个简单的迷宫生成器 (`maze.c`)。
 - **🪟 Windows编程**: 使用 WinAPI 进行Windows图形界面编程的尝试 (`mywin.c`, `win987.c`)。
 - **🎮 Raylib游戏库**: 使用 Raylib 库进行简单游戏开发的示例 (`raylib123/hiRaylib.c`)。
 - **💡 基础概念**: 一些学习C语言核心知识（如数组、指针、文件操作、断言等）的微型程序。
@@ -39,7 +39,7 @@
      :: 使用 ./fibonacci 也会运行.\Fibonacci.exe
    ```
 
-   或者在 Linux 或 macOS 上:
+   在 Linux 或 macOS 上:
    ```bash
    gcc Fibonacci.c -o fibonacci
    ./fibonacci
