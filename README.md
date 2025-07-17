@@ -4,9 +4,11 @@
 
 ## ✨ 亮点展示
 
-这是一个由 `fib_colors.c` 生成的斐波那契数列的可视化图像，展示了C语言在图形和算法结合方面的魅力。
+1. `fib_colors.c` 生成的斐波那契数列的控制台彩色文本，展示了C语言在图形和算法结合方面的魅力。
 
 ![斐波那契数列颜色可视化](screenshot/fib_colors--20250716.png)
+
+2. 
 
 ## 🚀 项目特色
 
@@ -46,7 +48,22 @@
    ```
 
    > **注意**: 某些程序可能需要链接额外的库。例如，如果用到了数学函数，需要加上 `-lm` 参数。
-   
+
+## 值得学习的C语言开源项目
+
+1. [smallchat](https://github.com/antirez/smallchat) A minimal programming example for a chat server and client.  
+<https://github.com/mrchipset/smallchat-win32>
+2. [kilo](https://github.com/antirez/kilo) 一个小巧的文本编辑器，可以在终端中运行
+3. [Tinyhttpd](https://github.com/EZLippi/Tinyhttpd) 一个基于C语言的HTTP服务器
+4.  [WebBench](https://github.com/EZLippi/WebBench)
+5. [The C Standard Library](https://github.com/rxi/libs)  一个C语言标准库，提供了一些常用的函数和数据结构。
+6. [libuv](https://github.com/libuv/libuv) 一个C语言库，提供了一些常用的异步I/O函数。
+7. [libevent](https://github.com/libevent/libevent)
+8. sqlite
+9. Redis
+10. nginx
+11. Lua
+
 ## 📜 许可证
 
 本项目采用 [MIT License](LICENSE) 开源。
