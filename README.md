@@ -8,7 +8,11 @@
 
 ![斐波那契数列颜色可视化](screenshot/fib_colors--20250716.png)
 
-2. 
+2. `win32_controls_demo.c`
+   ![](screenshot/win32_controls_demo.exe.png)
+
+3. `beep_sleep_demo.c` 模拟计算机的蜂鸣声
+4.
 
 ## 🚀 项目特色
 
@@ -19,7 +23,11 @@
 - **🧩 数独游戏**: 一个C语言实现的数独解算器 (`sudoku.c`)。
 - **🥧 圆周率计算**: 使用不同算法计算π，包括 Chudnovsky 算法 (`pi.c`, `chudnovsky_pi.c`)。
 - **ꡙ‍ maze**: 一个简单的迷宫生成器 (`maze.c`)。
-- **🪟 Windows编程**: 使用 WinAPI 进行Windows图形界面编程的尝试 (`mywin.c`, `win987.c`)。
+- **🪟 Windows编程**: 使用 WinAPI 进行Windows图形界面编程的尝试 (`win32_controls_demo.c`, `win987.c`)。 To compile with GCC (MinGW in w64devkit):
+ ```PowerShell
+ gcc win32_controls_demo.c -o win32_controls_demo.exe -lcomctl32 -lgdi32 -luser32
+ ```
+ 
 - **🎮 Raylib游戏库**: 使用 Raylib 库进行简单游戏开发的示例 (`raylib123/hiRaylib.c`)。
 - **💡 基础概念**: 一些学习C语言核心知识（如数组、指针、文件操作、断言等）的微型程序。
 

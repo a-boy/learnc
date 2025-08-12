@@ -345,7 +345,7 @@ void InitializeListView(HWND hLV) {
 void AddItemToListView(HWND hLV, const char* col1, const char* col2, const char* col3) {
     LVITEM lvi;
     lvi.mask = LVIF_TEXT;
-    lvi.iIt-em = ListView_GetItemCount(hLV); // Insert at the end
+    lvi.iItem = ListView_GetItemCount(hLV); // Insert at the end
     lvi.iSubItem = 0;
     lvi.pszText = (LPSTR)col1; // Cast because pszText is LPTSTR
     ListView_InsertItem(hLV, &lvi);
