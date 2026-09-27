@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Fibonacci 魔改展示器</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; color: #333; padding: 20px; }
+    h1 { color: #4a90e2; }
+    input, button { padding: 8px; margin: 5px; }
+    .output { white-space: pre; font-family: monospace; background: #fff; padding: 10px; border: 1px solid #ccc; max-height: 400px; overflow-y: auto; }
+    .chart { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>🔢 Fibonacci 可视化生成器</h1>
+  <label>生成数量: <input type="number" id="count" value="45"></label>
+  <button onclick="generate()">生成并显示</button>
+  <div class="output" id="output"></div>
+  <canvas class="chart" id="chart" width="600" height="300"></canvas>
+
+  <script>
+    function generate() {
+      let count = parseInt(document.getElementById('count').value);
+      let a = 0, b = 1;
+      let result = '';
+      let data = [a, b];
+
+      for (let i = 2; i < count; i++) {
+        let c = a + b;
+        result += `${String(a).padStart(10)} ${String(b).padStart(10)} ${String(c).padStart(10)}\n`;
+        a = b;
+        b = c;
+        data.push(c);
+      }
+
+      document.getElementById('output').textContent = result;
+
+      // 可视化
+      let canvas = document.getElementById('chart');
+      let ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      let max = Math.max(...data);
+      let stepX = canvas.width / data.length;
+      ctx.beginPath();
+      ctx.moveTo(0, canvas.height - (data[0] / max) * canvas.height);
+      for (let i = 1; i < data.length; i++) {
+        let x = i * stepX;
+        let y = canvas.height - (data[i] / max) * canvas.height;
+        ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = "#e91e63";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+  </script>
+</body>
+</html>

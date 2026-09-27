@@ -1,0 +1,1 @@
+ long a=0,b=1,c=1;main(){while(c>0){printf("%5d %5d %5d\n",a,b,c);a=b+c;b=c+a;c=a+b;}}
